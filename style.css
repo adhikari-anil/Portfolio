@@ -4,7 +4,6 @@
 }
 body{
     background-image: url("/image & Resume/LooperGroup2.png") ;
-
     background-repeat: no-repeat;
     background-size: 200%;
     background-color:#10131a;
@@ -23,9 +22,15 @@ nav ul li{
 }
 nav ul img{
     filter: drop-shadow(2px 2px 2px rgb(255, 219, 219));
-    height: 40px;
-    
+    height: 45px;
 }
+nav ul img:hover{
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 1px 1px 10px white;
+}
+
 nav{
     margin: 2%;
 }
@@ -72,7 +77,10 @@ main div img{
     margin-top: 80px;
 }
 main div h3{
-    background: linear-gradient(to right, #0000ff,rgb(255, 255, 255),#ff0000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #0000ff,rgb(255, 255, 255),#ff0000); 
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     display: flex;
     margin-top: 20px;
     font-size: 40px;
@@ -119,7 +127,10 @@ main div button:hover{
 
 
 #aboutme h1{
-    background: linear-gradient(to right, #2200ff,#9625c2,#ff0000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #2200ff,#9625c2,#ff0000);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
     font-family: sans-serif;
     font-size: 50px;
     font-weight: 800;
@@ -136,7 +147,10 @@ main div button:hover{
 }
 
 #skill h1{
-    background: linear-gradient(to right, #7ba5ff,#263556); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #7ba5ff,#263556);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-top: 25px;
     font-size: 40px;
     font-family: sans-serif;
@@ -156,16 +170,22 @@ main div button:hover{
     text-align: center;
     color: rgba(211, 211, 211, 0.894) ;
 }
+/* .projec div{
+    display: flex;
+    justify-content: center;
+} */
 
 #project h1{
-    background: linear-gradient(to right, #2200ff,#9625c2,#ff0000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-
+    background: linear-gradient(to right, #2200ff,#9625c2,#ff0000);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
     margin-top: 100px;
     font-size: 50px;
     font-family: sans-serif;
     font-weight: 800;
-    text-align: center;
-
+    display: flex;
+    justify-content: center;
 }
 
 #allprojects{
@@ -192,20 +212,35 @@ main div button:hover{
 
 
 footer{
+    padding: 5px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    font-family: sans-serif;
+    font-size: larger;
 }
+footer .f1{
+    margin-left: 20%;
+    font-style: italic;
+    font-size: medium;
+}
+
 #img img{
-    height: 30px;
+    height: 40px;
+    width: 40px;
     margin-right: 5px;
     margin-left: 5px;
+    gap: 5px;
+    background-color: whitesmoke;
 }
 #img{
     display: flex;
+    height: fit-content;
     margin-bottom: 10px;
     align-items: center;
     justify-content: center;
 }
+
 footer h1{
     text-align: center;
     padding-top: 5px;
@@ -308,7 +343,10 @@ footer h1{
 }
 
 #cntct{
-    background: linear-gradient(to right, #2200ff,#9625c2,#ff0000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #2200ff,#9625c2,#ff0000);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
     margin-bottom: 50px;
     margin-top: 100px;
     font-size: 50px;
